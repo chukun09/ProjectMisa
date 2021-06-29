@@ -20,7 +20,7 @@
     height: 36px;
     font-size: 12px;
     color: #bbbbbb;
-    background: url(/Resource/Resource/icon/search.png) no-repeat scroll 16px;
+    background: url(../Resource/Resource/icon/search.png) no-repeat scroll 16px;
     background-size: 16px;
     background-position-x: 8px;
     padding-left:32px;
