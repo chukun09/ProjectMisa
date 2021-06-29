@@ -1,0 +1,52 @@
+#employee-list{
+    font-size: 20px;
+    font-family: 'googleregular';
+    margin-left: 12px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.head-content{
+    display: flex;
+    text-align: center;
+}
+.content{
+    margin-top: 20px;
+    width: 100%;
+}
+#findtext{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #DBDEFF;
+    height: 36px;
+    font-size: 12px;
+    color: #bbbbbb;
+    background: url(/Resource/Resource/icon/search.png) no-repeat scroll 16px;
+    background-size: 16px;
+    background-position-x: 8px;
+    padding-left:32px;
+}
+#findtext:focus{
+    outline: 1px solid #019160;
+    border-radius: 5px;
+}
+
+.finder{
+    margin-left: 12px;
+    display: flex;
+}
+#buttonadd {
+    background-color: #019160;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 13px;
+    color: #ffff;
+    text-align: center;
+    padding-inline: 24px;
+    font-family: 'googleregular';
+    margin-left: auto;
+    margin-right: 16px;
+    margin-top: 12px;
+}
+table {
+    margin-top: 15px;
+}
