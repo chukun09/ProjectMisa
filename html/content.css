@@ -8,10 +8,35 @@
 .head-content{
     display: flex;
     text-align: center;
+    padding-top: 12px;
 }
 .content{
-    margin-top: 20px;
+    height: 100%;
     width: 100%;
+    border-left: 1px solid #e5e5e5;
+}
+.dropdown{
+    margin-left: 10px;
+}
+#dropdownMenuButton{
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 40px;
+    color: black;
+    font-size: 13px;
+    font-family: 'googleregular';
+    background-color: white;
+}
+#dropdownMenuButton:focus{
+    outline: 1px solid #019160;
+}
+.dropdown-item{
+    font-size: 13px;
+    font-family: 'googleregular';
+}
+.dropdown-item:focus{
+    color: white;
+    background-color: #019160;
 }
 #findtext{
     width: 300px;
@@ -36,17 +61,110 @@
 }
 #buttonadd {
     background-color: #019160;
+    border: 1px solid ;
     border-radius: 4px;
     height: 40px;
     font-size: 13px;
     color: #ffff;
-    text-align: center;
-    padding-inline: 24px;
+    text-align: left;
     font-family: 'googleregular';
     margin-left: auto;
     margin-right: 16px;
     margin-top: 12px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+#buttonadd:focus{
+    background-color: #01B075;
+    outline:1px solid white;
+}
+#buttonadd:hover{
+    background-color: #2FBE8E;
+}
+#imgadd{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 }
 table {
     margin-top: 15px;
 }
+tr:nth-child(even) {
+    background-color: #e5e5e5;
+  }
+#btnrefresh{
+    background-color: white;
+    border: 1px solid #DBDEFF;
+    margin-left: auto;
+    margin-right: 16px;
+    width: 52px;
+    height: 44px;
+    border-radius: 5px;
+}
+.pagination{
+    justify-content: center !important;
+    vertical-align: middle;
+}
+#listpage {
+    overflow: auto;  
+    display: flex;
+    align-items: center;
+  }
+.list-page{
+    vertical-align: baseline;
+    margin: 10px;
+}
+.page-link{
+    border-radius: 50%;
+    border: 1px solid #BBBBBB;
+    color: black !important;
+    background-color: #e5e5e5 !important;
+}
+.page-link:focus{
+    background-color: #01B075 !important;
+    color: white !important;
+    outline: none !important;
+    border: none !important;
+}
+.page-link:hover{
+    background-color: white !important;
+    color: black !important;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80% !important;
+    display:  block !important; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

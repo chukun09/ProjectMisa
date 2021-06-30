@@ -1,0 +1,31 @@
+.addform{
+    display: flex;
+    border: 1px solid white;
+}
+#inforemployee{
+    font-size: 30px;
+}
+#defaultavatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #BBBB;
+}
+.contentform{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.form{
+    margin-top: 100px;
+}
+#imgpara{
+    width: 200px;
+    text-align: center;
+}
+#linediv{
+    border: 3px solid #019160;
+    width: 100px;
+}
+#star{
+    color: red;
+}

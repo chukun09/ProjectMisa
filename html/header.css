@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'googlesan';
-    src: url(/Resource/Resource/font/GoogleSans-Black.otf);
+    src: url(../Resource/Resource/font/GoogleSans-Black.otf);
 }
 .header{
     padding: 0px;
     margin: 0px;
     display: flex;
     font-family: 'googlesan';
-    padding-bottom: 7px;
     border-bottom: 1px solid #e5e5e5;
 }
 #menu{
@@ -24,6 +23,7 @@
 }
 .left-header{
     border-right: 1px solid #e5e5e5;
+    width: 213px;
 }
 .center-header{
     display: flex;
