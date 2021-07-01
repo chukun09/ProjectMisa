@@ -1,22 +1,46 @@
 .addform{
     display: flex;
     border: 1px solid white;
+    height: 100%;
 }
 #inforemployee{
-    font-size: 30px;
+    font-size: 20px;
+    font-family: 'googlesan';
+    white-space: nowrap;
 }
 #defaultavatar{
-    width: 200px;
-    height: 200px;
+    width: 150px;
     border-radius: 50%;
     border: 1px solid #BBBB;
+    margin-left: 10px;
 }
 .contentform{
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 20px;
+    height: 100%;
+}
+.avatarform{
+    margin-left: 15px;
+    text-align: start;
+}
+.textfield{
+    height: 40px;
+    padding-left: 16px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    color: black;
+    font-family: 'googleregular';
+    font-size: 13px;
+    padding-bottom: 4px;
+}
+.textfield:focus{
+    outline: 1px solid #019160;
+}
+.codeandname{
+    text-align: left;
 }
 .form{
-    margin-top: 100px;
+    margin-top: 75px;
+    height: 100%;
 }
 #imgpara{
     width: 200px;
@@ -28,4 +52,12 @@
 }
 #star{
     color: red;
+}
+#employeecode{
+    text-align: left;
+    margin: 0px;
+}
+.titleemployee{
+    display: flex;
+    margin-top: 10px;
 }

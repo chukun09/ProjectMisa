@@ -1,14 +1,91 @@
 <link rel="stylesheet" href="addform.css">
 <div class="addform">
     <div class="contentform">
-        <p id="inforemployee">THÔNG TIN NHÂN VIÊN</p>
-        <img id="defaultavatar" src="../Resource/Resource/img/default-avatar.jpg">
-        <p id="imgpara">(vui lòng chọn ảnh có dạng .jpg, .jpeg, .png, .gif.)</p>
+        <p id="inforemployee" style="text-align: left;">THÔNG TIN NHÂN VIÊN</p>
+        <div class="avatarform">
+            <img id="defaultavatar" src="../Resource/Resource/img/default-avatar.jpg">
+            <p id="imgpara">(vui lòng chọn ảnh có dạng .jpg, .jpeg, .png, .gif.)</p>
+        </div>
     </div>
     <div class="form">
-        <p>A. THÔNG TIN CHUNG</p>
+        <p style="text-align: left; font-family: 'googlesan';">A. THÔNG TIN CHUNG:</p>
         <div id="linediv">
         </div>
-        <span id="employeecode">Mã nhân viên </span><span id="star">(*)</span>
+        <div class="titleemployee">
+            <p id="employeecode">Mã nhân viên (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="text" style="width: 300px; margin-right: 20px;" placeholder="Mã nhân viên"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mã nhân viên'" id="inputcode">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Ngày sinh</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;" id="inputcode">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Số CMTND/ Căn cước (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="number" style="width: 300px; margin-right: 20px;"
+                placeholder="Số CMTND/ Căn cước" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Số CMTND/ Căn cước'" id="inputcode">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Nơi cấp</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="text" style="width: 300px; margin-right: 20px;" placeholder="Nơi cấp"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nơi cấp'" id="inputcode">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Email (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="email" style="width: 300px; margin-right: 20px;" placeholder="Email"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" id="inputcode">
+        </div>
+
+    </div>
+    <div class="form2" style="margin-top: 120px;">
+        <div class="titleemployee">
+            <p id="employeecode">Họ và tên (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="text" style="width: 300px; margin-right: 20px;" placeholder="Họ và tên"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Họ và tên'" id="inputcode">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Giới tính</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" style="width: 300px; margin-right: 20px;" id="inputcode">
+                <option>Nam</option>
+                <option>Nữ</option>
+                <option>Giới tính thứ 3</option>
+                <option>Khác</option>
+                </select>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Ngày cấp</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;" id="inputcode">
+        </div>
+        <div class="titleemployee" style="visibility: hidden;">
+            <p id="employeecode">Ngày cấp</p>
+        </div>
+        <div class="codeandname" style="visibility: hidden;">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;" id="inputcode">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Số điện thoại (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="number" style="width: 300px; margin-right: 20px;"
+                placeholder="Số điện thoại" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Số điện thoại'" id="inputcode">
+        </div>
     </div>
 </div>
