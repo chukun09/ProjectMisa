@@ -114,7 +114,8 @@
                 placeholder="Số điện thoại" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Số điện thoại'"
                 onkeypress="return isNumberKey(event)">
         </div>
-        <p style="text-align: left; visibility: hidden; margin-top: 10px; font-family: 'regular';">B. THÔNG TIN CÔNG VIỆC:</p>
+        <p style="text-align: left; visibility: hidden; margin-top: 10px; font-family: 'regular';">B. THÔNG TIN CÔNG
+            VIỆC:</p>
         <div id="linediv" style="visibility: hidden;">
         </div>
         <div class="titleemployee">
@@ -131,9 +132,10 @@
             <p id="employeecode">Mức lương cơ bản</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="text" required maxlength="10" style="width: 300px; margin-right: 20px;"
-                placeholder="Mức lương cơ bản" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mức lương cơ bản'"
-                onkeypress="return isNumberKey(event)">
+            <input id="salary" class="textfield" type="text" required maxlength="10"
+                style="width: 300px; margin-right: 20px;" placeholder="Mức lương cơ bản" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Mức lương cơ bản'" oninput="salary()">
+                <span id="VND">(VNĐ)</span>
         </div>
         <div class="titleemployee">
             <p id="employeecode">Tình trạng công việc</p>
@@ -146,9 +148,19 @@
             </select>
         </div>
     </div>
-    </div>
+</div>
 </div>
 <script>
+    function salary() {
+        var x = document.getElementById('salary');
+        const numberFormat = new Intl.NumberFormat('vi-VN'
+        );
+        x.value = numberFormat.format(x.value.replaceAll(".", ""));
+        if (x.value == '0') {
+            x.value = '';
+        }
+
+    }
     function isNumberKey(evt) {
         var charCode = (evt.which) ? evt.which : evt.keyCode
         if (charCode > 31 && (charCode < 48 || charCode > 57))

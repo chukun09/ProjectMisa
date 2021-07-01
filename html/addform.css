@@ -24,6 +24,7 @@
     height: 100%;
 }
 .avatarform{
+    margin-top: 30px;
     margin-left: 15px;
     text-align: start;
 }
@@ -80,4 +81,15 @@
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
+}
+.codeandname{
+    position: relative;
+}
+#VND{
+    font-style: italic;
+    font-family: 'regular';
+    font-size: 13px;
+    top: 8px;
+    position: absolute;
+    right: 30px;
 }
