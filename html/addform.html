@@ -16,7 +16,7 @@
         </div>
         <div class="codeandname">
             <input class="textfield" type="text" style="width: 300px; margin-right: 20px;" placeholder="Mã nhân viên"
-                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mã nhân viên'" id="inputcode">
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mã nhân viên'" id="inputcode" required>
         </div>
         <div class="titleemployee">
             <p id="employeecode">Ngày sinh</p>
@@ -28,9 +28,9 @@
             <p id="employeecode">Số CMTND/ Căn cước (<span id="star">*</span>)</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="number" style="width: 300px; margin-right: 20px;"
+            <input class="textfield" type="text" onkeypress="return isNumberKey(event)" maxlength="16" style="width: 300px; margin-right: 20px;"
                 placeholder="Số CMTND/ Căn cước" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Số CMTND/ Căn cước'" id="inputcode">
+                onblur="this.placeholder = 'Số CMTND/ Căn cước'" id="inputcode" required>
         </div>
         <div class="titleemployee">
             <p id="employeecode">Nơi cấp</p>
@@ -53,7 +53,7 @@
             <p id="employeecode">Họ và tên (<span id="star">*</span>)</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="text" style="width: 300px; margin-right: 20px;" placeholder="Họ và tên"
+            <input class="textfield" type="text" onkeypress="return !isNumberKey(event)" required style="width: 300px; margin-right: 20px;" placeholder="Họ và tên"
                 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Họ và tên'" id="inputcode">
         </div>
         <div class="titleemployee">
@@ -83,9 +83,17 @@
             <p id="employeecode">Số điện thoại (<span id="star">*</span>)</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="number" style="width: 300px; margin-right: 20px;"
+            <input class="textfield" type="tel" required maxlength="10" style="width: 300px; margin-right: 20px;"
                 placeholder="Số điện thoại" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Số điện thoại'" id="inputcode">
+                onblur="this.placeholder = 'Số điện thoại'" onkeypress="return isNumberKey(event)" id="inputcode">
         </div>
     </div>
 </div>
+<script>
+    function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}
+</script>
