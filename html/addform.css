@@ -1,11 +1,16 @@
+@font-face {
+    font-family: 'regular';
+    src: url(../Resource/Resource/font/GoogleSans-Regular.otf);
+}
 .addform{
     display: flex;
     border: 1px solid white;
     height: 100%;
+    padding: 20px;
 }
 #inforemployee{
     font-size: 20px;
-    font-family: 'googlesan';
+    font-family: 'regular';
     white-space: nowrap;
 }
 #defaultavatar{
@@ -28,7 +33,7 @@
     border: 1px solid #bbbbbb;
     border-radius: 4px;
     color: black;
-    font-family: 'googleregular';
+    font-family: 'regular';
     font-size: 13px;
     padding-bottom: 4px;
 }
@@ -60,4 +65,19 @@
 .titleemployee{
     display: flex;
     margin-top: 10px;
+}
+.endform{
+    background-color: #e5e5e5;
+    text-align: right;
+    padding: 5px;
+}
+.btnend{
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
 }

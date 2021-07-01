@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="form">
-        <p style="text-align: left; font-family: 'googlesan';">A. THÔNG TIN CHUNG:</p>
+        <p style="text-align: left; font-family: 'regular';">A. THÔNG TIN CHUNG:</p>
         <div id="linediv">
         </div>
         <div class="titleemployee">
@@ -16,84 +16,143 @@
         </div>
         <div class="codeandname">
             <input class="textfield" type="text" style="width: 300px; margin-right: 20px;" placeholder="Mã nhân viên"
-                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mã nhân viên'" id="inputcode" required>
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mã nhân viên'" required>
         </div>
         <div class="titleemployee">
             <p id="employeecode">Ngày sinh</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;" id="inputcode">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;">
         </div>
         <div class="titleemployee">
             <p id="employeecode">Số CMTND/ Căn cước (<span id="star">*</span>)</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="text" onkeypress="return isNumberKey(event)" maxlength="16" style="width: 300px; margin-right: 20px;"
-                placeholder="Số CMTND/ Căn cước" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Số CMTND/ Căn cước'" id="inputcode" required>
+            <input class="textfield" type="text" onkeypress="return isNumberKey(event)" maxlength="16"
+                style="width: 300px; margin-right: 20px;" placeholder="Số CMTND/ Căn cước"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Số CMTND/ Căn cước'" required>
         </div>
         <div class="titleemployee">
             <p id="employeecode">Nơi cấp</p>
         </div>
         <div class="codeandname">
             <input class="textfield" type="text" style="width: 300px; margin-right: 20px;" placeholder="Nơi cấp"
-                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nơi cấp'" id="inputcode">
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nơi cấp'">
         </div>
         <div class="titleemployee">
             <p id="employeecode">Email (<span id="star">*</span>)</p>
         </div>
         <div class="codeandname">
             <input class="textfield" type="email" style="width: 300px; margin-right: 20px;" placeholder="Email"
-                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" id="inputcode">
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
         </div>
-
+        <p style="text-align: left; margin-top: 10px; font-family: 'regular';">B. THÔNG TIN CÔNG VIỆC:</p>
+        <div id="linediv">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Vị trí</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" style="width: 300px; margin-right: 20px;">
+                <option>Giám Đốc</option>
+                <option>Thực tập</option>
+                <option>Khác</option>
+            </select>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Mã số thuế</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="tel" required maxlength="10" style="width: 300px; margin-right: 20px;"
+                placeholder="Mã số thuế" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mã số thuế'"
+                onkeypress="return isNumberKey(event)">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Ngày gia nhập công ty</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;">
+        </div>
     </div>
     <div class="form2" style="margin-top: 120px;">
         <div class="titleemployee">
             <p id="employeecode">Họ và tên (<span id="star">*</span>)</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="text" onkeypress="return !isNumberKey(event)" required style="width: 300px; margin-right: 20px;" placeholder="Họ và tên"
-                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Họ và tên'" id="inputcode">
+            <input class="textfield" type="text" onkeypress="return !isNumberKey(event)" required
+                style="width: 300px; margin-right: 20px;" placeholder="Họ và tên" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Họ và tên'">
         </div>
         <div class="titleemployee">
             <p id="employeecode">Giới tính</p>
         </div>
         <div class="codeandname">
-            <select class="textfield" style="width: 300px; margin-right: 20px;" id="inputcode">
+            <select class="textfield" style="width: 300px; margin-right: 20px;">
                 <option>Nam</option>
                 <option>Nữ</option>
                 <option>Giới tính thứ 3</option>
                 <option>Khác</option>
-                </select>
+            </select>
         </div>
         <div class="titleemployee">
             <p id="employeecode">Ngày cấp</p>
         </div>
         <div class="codeandname">
-            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;" id="inputcode">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;">
         </div>
         <div class="titleemployee" style="visibility: hidden;">
             <p id="employeecode">Ngày cấp</p>
         </div>
         <div class="codeandname" style="visibility: hidden;">
-            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;" id="inputcode">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;">
         </div>
         <div class="titleemployee">
             <p id="employeecode">Số điện thoại (<span id="star">*</span>)</p>
         </div>
         <div class="codeandname">
             <input class="textfield" type="tel" required maxlength="10" style="width: 300px; margin-right: 20px;"
-                placeholder="Số điện thoại" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Số điện thoại'" onkeypress="return isNumberKey(event)" id="inputcode">
+                placeholder="Số điện thoại" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Số điện thoại'"
+                onkeypress="return isNumberKey(event)">
         </div>
+        <p style="text-align: left; visibility: hidden; margin-top: 10px; font-family: 'regular';">B. THÔNG TIN CÔNG VIỆC:</p>
+        <div id="linediv" style="visibility: hidden;">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Phòng ban</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" style="width: 300px; margin-right: 20px;">
+                <option>Phòng nhân sự</option>
+                <option>Phòng kinh doanh</option>
+                <option>Khác</option>
+            </select>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Mức lương cơ bản</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="text" required maxlength="10" style="width: 300px; margin-right: 20px;"
+                placeholder="Mức lương cơ bản" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mức lương cơ bản'"
+                onkeypress="return isNumberKey(event)">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Tình trạng công việc</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" style="width: 300px; margin-right: 20px;">
+                <option>Đang làm việc</option>
+                <option>Đã nghỉ</option>
+                <option>Tạm nghỉ</option>
+            </select>
+        </div>
+    </div>
     </div>
 </div>
 <script>
-    function isNumberKey(evt){
-    var charCode = (evt.which) ? evt.which : evt.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57))
-        return false;
-    return true;
-}
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
+    }
 </script>
