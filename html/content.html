@@ -19,209 +19,202 @@
         </div>
     </div>
     <div class="finder">
-        <input type="text" id="findtext" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại"
+        <input type="text" class="findtext" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại"
             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tìm kiếm theo Mã, Tên hoặc Số điện thoại'">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tất cả phòng ban
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <button type="button" class="dropdown-item">Phòng nhân sự</button>
-                <button type="button" class="dropdown-item">Phòng kinh doanh</button>
-                <button type="button" class="dropdown-item">Phòng nghiên cứu khoa học</button>
-            </div>
+        <div class="codeandname">
+            <select class="findtext" style="color: black;">
+                <option>Tất cả phòng ban</option>
+                <option>Phòng kinh doanh</option>
+                <option>Phòng sản xuất</option>
+                <option>Phòng nhân sự</option>
+            </select>
         </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tất cả vị trí
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <button type="button" class="dropdown-item">Phòng nhân sự</button>
-                <button type="button" class="dropdown-item">Phòng kinh doanh</button>
-                <button type="button" class="dropdown-item">Phòng nghiên cứu khoa học</button>
-            </div>
+        <div class="codeandname">
+            <select class="findtext" style="color: black;">
+                <option>Tất cả vị trí</option>
+                <option>Giám đốc</option>
+                <option>Fresher</option>
+            </select>
         </div>
         <button id="btnrefresh" type="button"><img id="refresh" src="../Resource/Resource/icon/refresh.png"></button>
     </div>
     <div id="tablecontainer">
-    <table class="table table-responsive w-100 d-block d-md-table">
-        <thead class="thead-inverse">
-            <tr>
-                <th>Mã nhân viên</th>
-                <th>Họ và tên</th>
-                <th>Giới tính</th>
-                <th>Ngày sinh</th>
-                <th>Điện thoại</th>
-                <th>Email</th>
-                <th>Chức vụ</th>
-                <th>Phòng ban</th>
-                <th>Mức lương cơ bản</th>
-                <th>Tình trạng công việc</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
+        <table class="table table-responsive w-100 d-block d-md-table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Mã nhân viên</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Điện thoại</th>
+                    <th>Email</th>
+                    <th>Chức vụ</th>
+                    <th>Phòng ban</th>
+                    <th>Mức lương cơ bản</th>
+                    <th>Tình trạng công việc</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
 
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-            <tr>
-                <td scope="row">MF-896</td>
-                <td>Trần Đức Long</td>
-                <td>Nam</td>
-                <td>14/12/2000</td>
-                <td>0981392920</td>
-                <td>phongtranmv@gmail.com</td>
-                <td>Fresher</td>
-                <td>Khối sản xuất</td>
-                <td>3.000.000</td>
-                <td>Đang thử việc</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                    <td scope="row">MF-896</td>
+                    <td>Trần Đức Long</td>
+                    <td>Nam</td>
+                    <td>14/12/2000</td>
+                    <td>0981392920</td>
+                    <td>phongtranmv@gmail.com</td>
+                    <td>Fresher</td>
+                    <td>Khối sản xuất</td>
+                    <td>3.000.000</td>
+                    <td>Đang thử việc</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <div class="pagination">
         <ul id="listpage" style="list-style-type: none;">
             <li class="list-page"><img src="../Resource/Resource/icon/btn-firstpage.svg" alt="firstpage"></li>
@@ -234,8 +227,8 @@
             <li class="list-page"><img src="../Resource/Resource/icon/btn-lastpage.svg" alt="prevpage"></li>
 
         </ul>
-
     </div>
+</div>
 </div>
 <script>
     var modal = document.getElementById("myModal");

@@ -38,19 +38,22 @@
     color: white;
     background-color: #019160;
 }
-#findtext{
+.findtext{
     width: 300px;
     border-radius: 5px;
     border: 1px solid #DBDEFF;
     height: 36px;
+    font-family: 'googleregular';
     font-size: 12px;
+    margin-left: 12px;
     color: #bbbbbb;
     background: url(../Resource/Resource/icon/search.png) no-repeat scroll 16px;
     background-size: 16px;
     background-position-x: 8px;
     padding-left:32px;
 }
-#findtext:focus{
+
+.findtext:focus{
     outline: 1px solid #019160;
     border-radius: 5px;
 }
