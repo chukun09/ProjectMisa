@@ -53,8 +53,11 @@
     text-align: center;
 }
 #linediv{
-    border: 3px solid #019160;
+    border-top: 3px solid #019160;
     width: 100px;
+}
+tr:hover{
+    background-color: #BBBB !important;
 }
 #star{
     color: red;

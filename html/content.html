@@ -9,7 +9,8 @@
 <div class="content">
     <div class="head-content">
         <p id="employee-list">Danh sách nhân viên</p>
-        <button id="buttonadd" type="button"><img src="../Resource/Resource/icon/add.png" id="imgadd">Thêm Nhân
+        <button id="buttonadd" type="button" onclick="openform()"><img src="../Resource/Resource/icon/add.png"
+                id="imgadd">Thêm Nhân
             Viên</button>
     </div>
     <div id="myModal" class="modal">
@@ -18,7 +19,8 @@
             <div id="addform"></div>
             <div class="endform">
                 <button class="btnend" style="background-color: #e5e5e5; border: none;" type="button">Hủy</button>
-                <button class="btnend" style="background-color: #019160; color: white;" type="button"><i class="fa fa-floppy-o" style="margin-right: 8px; font-size: 16px;"></i>Lưu</button>
+                <button class="btnend" style="background-color: #019160; color: white;" type="button"><i
+                        class="fa fa-floppy-o" style="margin-right: 8px; font-size: 16px;"></i>Lưu</button>
             </div>
         </div>
     </div>
@@ -239,11 +241,14 @@
     var btn = document.getElementById("buttonadd");
 
     var span = document.getElementsByClassName("close")[0];
-
+    for (let i = 1; i < document.getElementsByTagName('tr').length; i++) {
+        document.getElementsByTagName('tr')[i].onclick = function () {
+            modal.style.display = "block";
+        }
+    }
     btn.onclick = function () {
         modal.style.display = "block";
     }
-
     span.onclick = function () {
         modal.style.display = "none";
     }
