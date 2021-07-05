@@ -193,3 +193,20 @@ tr:nth-child(even) {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
+  .finder-findtext{
+      position: relative;
+  }
+  .fa.fa-times{
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      right: 8px;
+      top: 10px;
+      color: #888;
+  }
+  .fa.fa-times:active{
+    color: rgb(255, 1, 1);
+  }
+  .fa.fa.fa-times:hover{
+      color: #01B075;
+  }
